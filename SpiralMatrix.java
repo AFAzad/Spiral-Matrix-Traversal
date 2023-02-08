@@ -13,18 +13,20 @@ public class SpiralMatrix{
         }
         else if(dir == 1){
             for(int i = top; i <= down; i++)
-            System.err.println(a[i][right]+" ");
+            System.out.print(a[i][right]+" ");
             right--;
         }
         else if(dir == 2){
             for(int i=right; i>= left; i--)
             System.out.print(a[down][i]+" ");
+            down--;
 
         }
         else if(dir == 3)
         {
             for(int i = down; i >=top; i--)
             System.out.print(a[i][left]+" ");
+            left++;
         }
         dir=(dir+1)%4;
 
