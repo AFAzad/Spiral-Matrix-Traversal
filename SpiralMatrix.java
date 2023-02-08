@@ -17,7 +17,7 @@ public class SpiralMatrix{
             right--;
         }
         else if(dir == 2){
-            for(int i=right; i>= left; i--)
+            for(int i=right; i>= left; i--)  
             System.out.print(a[down][i]+" ");
             down--;
 
